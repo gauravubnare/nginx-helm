@@ -1,0 +1,18 @@
+name: Helm Deployment
+
+on:
+  push:
+    branches:
+      - main  # Change this to your main branch name, if different
+  # You can customize the triggers to match your needs.
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # You can choose the runner platform that suits your needs.
+
+    steps:
+
+
+      - name: Deploy Helm Chart
+        run: |
+          helm upgrade --install my-app .
