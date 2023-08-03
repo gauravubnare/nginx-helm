@@ -1,0 +1,4 @@
+nginx:
+  image: nginx:latest
+  port: 80
+  nodePort: 30080
